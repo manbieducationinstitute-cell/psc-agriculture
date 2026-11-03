@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="मानवी एजुकेसन इन्स्टिच्युट: कृषि लोकसेवा तयारी कक्षा, अनलाइन कक्षा, रेकर्डेड भिडियो, PDF नोट्स र मक टेस्ट | MANBI Education Institute: Agriculture Loksewa preparation">
-<title>मानवी एजुकेसन इन्स्टिच्युट | MANBI Education Institute</title>
+<meta name="description" content="MANBI Education Institute: online Agriculture Loksewa preparation classes, recorded videos, PDF notes and mock tests.">
+<title>MANBI Education Institute | Agriculture Loksewa Preparation</title>
 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Noto+Serif+Devanagari:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#16213a;--paper:#fbfaf6;--panel:#ffffff;--line:#dcd8cc;--red:#b3262f;--gold:#e7b53a;--muted:#5b6275}
@@ -57,6 +57,10 @@ body.en [data-en]{display:revert}
 .btn.wa{background:#1f8f4d}.social{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}.social a{border:2px solid var(--ink);color:var(--ink);padding:6px 18px;border-radius:4px;text-decoration:none;font-weight:700}.social a:hover{background:var(--ink);color:var(--paper)}
 .hl{list-style:none;margin:0 0 14px;padding:0;max-width:34em}.hl li{position:relative;padding-left:30px;margin:6px 0;font-size:1.15rem}.hl li:before{content:"✓";position:absolute;left:0;top:0;color:var(--red);font-weight:700}
 .tm{margin:4px 0 0;color:var(--muted);font-weight:600}
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.flag{width:150px;justify-self:center}
+.flag svg{width:100%;height:auto;display:block;overflow:visible}
+@media (max-width:640px){.hero-grid{grid-template-columns:1fr}.flag{order:-1;width:110px;justify-self:start}}
 </style>
 </head>
 <body>
@@ -77,7 +81,7 @@ body.en [data-en]{display:revert}
 </header>
 
 <main>
-<div class="hero"><div class="wrap">
+<div class="hero"><div class="wrap hero-grid"><div class="hero-text">
  <h1><span data-ne>कृषि लोकसेवाको तयारी, घरबाटै</span><span data-en>Agriculture Loksewa preparation, from home</span></h1>
  <ul class="hl">
   <li><span data-ne>सबै कक्षा अनलाइनमार्फत घरबाटै पढ्न मिल्छ।</span><span data-en>Study every class online, from your own home.</span></li>
@@ -86,11 +90,32 @@ body.en [data-en]{display:revert}
  </ul>
  <a class="btn" href="tel:9763251680"><span data-ne>फोन गर्नुहोस्</span><span data-en>Call us</span></a>
  <a class="btn alt" href="#students"><span data-ne>विद्यार्थी क्षेत्र</span><span data-en>Student area</span></a>
-</div></div>
+</div>
+ <div class="flag" aria-label="Flag of Nepal" role="img">
+  <svg viewBox="-26 -22 362 450" xmlns="http://www.w3.org/2000/svg">
+   <rect x="-20" y="-6" width="7" height="430" rx="3" fill="#8a8f9c"/>
+   <circle cx="-16.5" cy="-10" r="8" fill="#e7b53a"/>
+   <defs>
+    <mask id="moonmask" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="400"><rect width="300" height="400" fill="#fff"/><circle cx="75" cy="91" r="41" fill="#000"/></mask>
+    <filter id="wave" x="-5%" y="-5%" width="115%" height="110%">
+     <feTurbulence id="turb" type="turbulence" baseFrequency="0.008 0.025" numOctaves="1" result="t">
+      <animate attributeName="baseFrequency" dur="7s" values="0.008 0.025;0.012 0.035;0.008 0.025" repeatCount="indefinite"/>
+     </feTurbulence>
+     <feDisplacementMap in="SourceGraphic" in2="t" scale="12" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+   </defs>
+   <g id="flagbody" filter="url(#wave)">
+    <polygon points="0,400 300,400 87.9,187.9 300,187.9 0,0" fill="#dc143c" stroke="#003893" stroke-width="14" stroke-linejoin="miter" paint-order="stroke"/>
+    <circle cx="75" cy="115" r="48" fill="#fff" mask="url(#moonmask)"/>
+    <polygon points="75.0,232.9 85.4,255.3 105.5,241.1 103.3,265.6 127.8,263.4 113.6,283.5 136.0,293.9 113.6,304.3 127.8,324.4 103.3,322.2 105.5,346.7 85.4,332.5 75.0,354.9 64.6,332.5 44.5,346.7 46.7,322.2 22.2,324.4 36.4,304.3 14.0,293.9 36.4,283.5 22.2,263.4 46.7,265.6 44.5,241.1 64.6,255.3" fill="#fff"/>
+    <circle cx="75" cy="293.9" r="37.5" fill="#fff"/>
+   </g>
+  </svg>
+ </div></div></div>
 
 <section id="about"><div class="wrap">
  <h2><span data-ne>हाम्रो बारेमा</span><span data-en>About us</span></h2>
- <p><span data-ne>मानवी एजुकेसन इन्स्टिच्युट कृषि तर्फको लोकसेवा तयारीमै केन्द्रित संस्था हो। कक्षा, नोट्स, मक टेस्ट र मार्गदर्शन, परीक्षाका लागि चाहिने सबै एकै ठाउँमा।</span>
+ <p><span data-ne>MANBI Education Institute कृषि तर्फको लोकसेवा तयारीमै केन्द्रित संस्था हो। कक्षा, नोट्स, मक टेस्ट र मार्गदर्शन, परीक्षाका लागि चाहिने सबै एकै ठाउँमा।</span>
  <span data-en>MANBI Education Institute focuses only on agriculture Loksewa preparation: classes, notes, mock tests and guidance, everything you need for the exam in one place.</span></p>
 </div></section>
 
@@ -114,7 +139,7 @@ body.en [data-en]{display:revert}
 </div></section>
 
 <section id="why"><div class="wrap">
- <h2><span data-ne>किन मानवी?</span><span data-en>Why MANBI?</span></h2>
+ <h2><span data-ne>किन MANBI?</span><span data-en>Why MANBI?</span></h2>
  <div class="grid">
   <div class="card"><h3><span data-ne>नाम निस्कँदासम्म एउटै शुल्क</span><span data-en>One fee until you are selected</span></h3><p><span data-ne>एकपटक भर्ना भएपछि लोकसेवामा तपाईंको नाम नआउँदासम्म सोही शुल्कमा पढाइ जारी।</span><span data-en>Once enrolled, you keep studying at the same fee until your name appears in a Loksewa result.</span></p></div>
   <div class="card"><h3><span data-ne>अनुभवी सर म्याडम</span><span data-en>Experienced teachers</span></h3><p><span data-ne>विद्यार्थीले सजिलै बुझ्ने गरी परीक्षामा काम लाग्ने तरिकाले पढाइ।</span><span data-en>Clear, exam-focused teaching that students can follow easily.</span></p></div>
@@ -161,7 +186,7 @@ body.en [data-en]{display:revert}
 </div></section>
 </main>
 
-<footer>© <span id="yr"></span> <span data-ne>मानवी एजुकेसन इन्स्टिच्युट</span><span data-en>MANBI Education Institute</span></footer>
+<footer>© <span id="yr"></span> MANBI Education Institute</footer>
 
 <script>
 /* ===== यहाँ मात्र सम्पादन गर्नुहोस् / EDIT ONLY THIS PART ===== */
@@ -199,7 +224,7 @@ document.getElementById('vidList').innerHTML = VIDEOS.length
 
 const CLS_NAMES = {junior:['कृषि चौथो / पाँचौँ तह','Agriculture 4th / 5th level'], officer:['अधिकृत सातौँ तह','Officer 7th level']};
 document.getElementById('clsList').innerHTML = Object.keys(CLS_NAMES).map(k => {
-  const msg = 'नमस्ते, म मानवी एजुकेसन इन्स्टिच्युटमा भर्ना भएको विद्यार्थी हुँ।\nनाम: \nतह: ' + CLS_NAMES[k][0] + '\nGmail: \nकृपया मलाई Classroom मा जोड्नुहोस्।';
+  const msg = 'नमस्ते, म MANBI Education Institute मा भर्ना भएको विद्यार्थी हुँ।\nनाम: \nतह: ' + CLS_NAMES[k][0] + '\nGmail: \nकृपया मलाई Classroom मा जोड्नुहोस्।';
   return `<a class="btn wa" href="https://wa.me/9779763251680?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener"><span data-ne>${CLS_NAMES[k][0]}: Classroom का लागि अनुरोध</span><span data-en>${CLS_NAMES[k][1]}: Request Classroom access</span></a>`;
 }).join('');
 [['materials',MATERIALS],['videos',VIDEOS]].forEach(([id,arr]) => {
@@ -212,6 +237,9 @@ const SOC_NAMES = {facebook:'Facebook', tiktok:'TikTok', youtube:'YouTube'};
 document.getElementById('social').innerHTML = Object.keys(SOC_NAMES).filter(k => SOCIAL[k])
   .map(k => `<a href="${esc(SOCIAL[k])}" target="_blank" rel="noopener">${SOC_NAMES[k]}</a>`).join('');
 
+if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const b = document.getElementById('flagbody'); if (b) b.removeAttribute('filter');
+}
 const btn = document.getElementById('lang');
 function setLang(en){
   document.body.classList.toggle('en', en);
