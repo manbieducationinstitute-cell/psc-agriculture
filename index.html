@@ -3,253 +3,328 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="MANBI Education Institute: online Agriculture Loksewa preparation classes, recorded videos, PDF notes and mock tests.">
+<meta name="description" content="MANBI Education Institute — कृषि लोकसेवा तयारीका लागि लाइभ कक्षा, अनुभवी प्रशिक्षक, नोट्स, रेकर्डेड भिडियो, मोक टेस्ट र व्यक्तिगत मार्गदर्शन।">
+<meta name="theme-color" content="#123d2c">
 <title>MANBI Education Institute | Agriculture Loksewa Preparation</title>
-<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Noto+Serif+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Mukta:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#16213a;--paper:#fbfaf6;--panel:#ffffff;--line:#dcd8cc;--red:#b3262f;--gold:#e7b53a;--muted:#5b6275}
-@media (prefers-color-scheme:dark){:root{--ink:#eef0f6;--paper:#10162a;--panel:#18203a;--line:#2b3555;--red:#ff6b73;--gold:#e7b53a;--muted:#a3abc4}}
+:root{
+ --green:#123d2c;--green2:#1d6242;--lime:#b9d85b;--gold:#f2c14e;
+ --cream:#fbfaf4;--paper:#fff;--ink:#17251e;--muted:#64736a;
+ --line:#e5e9df;--soft:#eef4e9;--shadow:0 18px 50px rgba(18,61,44,.10);
+ --radius:20px;
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Mukta,system-ui,sans-serif;background:var(--paper);color:var(--ink);font-size:18px;line-height:1.65}
-h1,h2,h3{font-family:"Noto Serif Devanagari",Georgia,serif;line-height:1.3;margin:0 0 .5em}
-a{color:var(--red)}
-.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2px solid var(--ink)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px}.logo{width:44px;height:44px;flex:none}.bt{display:flex;flex-direction:column;line-height:1.1;font-family:Georgia,serif}.bt b{font-size:1.35rem;letter-spacing:.06em}.bt small{font-size:.8rem;color:var(--muted)}
-nav{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-nav a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
-nav a:hover{color:var(--red)}
-button{font:inherit;cursor:pointer}
-#lang{border:2px solid var(--ink);background:transparent;color:var(--ink);padding:2px 12px;border-radius:4px;font-weight:700}
-#lang:focus-visible,a:focus-visible,.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.hero{padding:64px 0 48px;border-bottom:1px solid var(--line)}
-.hero h1{font-size:clamp(2rem,6vw,3.4rem);max-width:15em}
-.hero p{max-width:34em;color:var(--muted);font-size:1.15rem}
-.btn{display:inline-block;background:var(--red);color:#fff;padding:10px 22px;border-radius:4px;text-decoration:none;font-weight:700;margin:6px 8px 0 0}
-.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
-section{padding:48px 0;border-bottom:1px solid var(--line)}
-section>.wrap>h2{font-size:1.7rem;border-left:6px solid var(--gold);padding-left:12px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px}
-.card h3{font-size:1.1rem}
-.card p{margin:0;color:var(--muted)}
-.list{list-style:none;margin:0;padding:0}
-.list li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.video{position:relative;padding-top:56.25%;background:var(--line);border-radius:6px;overflow:hidden}
-.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.empty{color:var(--muted);font-style:italic}
-footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Mukta,"DM Sans",sans-serif;font-size:17px;line-height:1.7}
+a{color:inherit}
+.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+h1,h2,h3{font-family:"Noto Serif Devanagari",Mukta,serif;line-height:1.28;margin:0}
+p{margin:0 0 14px}
+.topbar{background:var(--green);color:#eaf2e9;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:7px 0;flex-wrap:wrap}
+.topbar a{color:#fff;text-decoration:none;font-weight:700}
+header{position:sticky;top:0;z-index:20;background:rgba(251,250,244,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navwrap{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.logo{width:49px;height:49px;border-radius:15px;box-shadow:0 5px 16px #123d2c22}
+.brandtext{display:flex;flex-direction:column;line-height:1.15}
+.brandtext strong{font:800 23px "DM Sans",sans-serif;letter-spacing:.08em;color:var(--green)}
+.brandtext small{font-size:12px;letter-spacing:.04em;color:var(--muted);font-weight:700}
+nav{display:flex;align-items:center;gap:22px}
+nav a{text-decoration:none;font-weight:700;font-size:15px;color:#31443a}
+nav a:hover{color:var(--green2)}
+.nav-actions{display:flex;align-items:center;gap:9px}
+.lang{border:1px solid var(--line);background:#fff;border-radius:30px;padding:8px 13px;font:700 13px Mukta;cursor:pointer}
+.menu{display:none;border:0;background:var(--soft);border-radius:12px;padding:9px 12px;font-size:22px;color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:800;border:2px solid transparent;transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
+.btn.primary{background:var(--gold);color:#1d2a1f;box-shadow:0 8px 20px #f2c14e44}
+.btn.green{background:var(--green);color:#fff}
+.btn.outline{border-color:#d5e2d5;color:var(--green);background:#fff}
+.btn.whatsapp{background:#16834a;color:#fff}
+.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#103b2a 0%,#1c6041 64%,#2b7650 100%);color:#fff;padding:78px 0 76px}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid #ffffff18;border-radius:50%;pointer-events:none}
+.hero:before{width:480px;height:480px;right:-140px;top:-230px}
+.hero:after{width:340px;height:340px;right:10px;bottom:-260px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#ffffff17;border:1px solid #ffffff35;padding:6px 14px;border-radius:30px;color:#e8f5dd;font-weight:700;font-size:14px;margin-bottom:20px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 5px #b9d85b22}
+.hero h1{font-size:clamp(34px,5vw,58px);max-width:760px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-copy{font-size:19px;color:#e1eee4;max-width:680px;margin:22px 0 24px}
+.hero-points{display:flex;gap:10px 18px;flex-wrap:wrap;margin:0 0 28px;padding:0;list-style:none}
+.hero-points li{font-size:15px;color:#f0f6ee;font-weight:600}
+.hero-points li:before{content:"✓";color:var(--lime);font-weight:900;margin-right:8px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
+.hero-buttons .outline{background:#ffffff12;color:#fff;border-color:#ffffff65}
+.hero-art{min-height:340px;display:grid;place-items:center;position:relative}
+.art-card{width:min(100%,370px);background:#fff;color:var(--green);border-radius:28px;padding:28px;box-shadow:0 25px 70px #061d1280;transform:rotate(2deg)}
+.art-icon{width:72px;height:72px;background:#edf5df;border-radius:22px;display:grid;place-items:center;font-size:38px;margin-bottom:18px}
+.art-card h3{font-size:25px;margin-bottom:8px}
+.art-card p{color:var(--muted);font-size:15px}
+.art-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.art-tags span{background:#f2f6eb;color:#31563b;padding:6px 11px;border-radius:20px;font-size:13px;font-weight:700}
+.hero-stamp{position:absolute;right:0;bottom:8px;background:var(--gold);color:#243322;width:112px;height:112px;border-radius:50%;display:grid;place-items:center;text-align:center;font-weight:900;line-height:1.2;transform:rotate(9deg);border:7px solid #ffffff30}
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust-item{padding:22px 16px;text-align:center;border-right:1px solid var(--line)}
+.trust-item:last-child{border:0}
+.trust-item strong{display:block;color:var(--green);font-size:17px}
+.trust-item span{color:var(--muted);font-size:13px}
+section{padding:76px 0}
+.section-head{max-width:760px;margin:0 auto 34px;text-align:center}
+.kicker{color:var(--green2);font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.section-head h2{font-size:clamp(27px,3.5vw,39px);color:var(--green);margin-bottom:12px}
+.section-head p{color:var(--muted);font-size:17px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.about-panel{background:var(--soft);border-radius:28px;padding:34px;position:relative;overflow:hidden}
+.about-panel:after{content:"🌱";position:absolute;font-size:120px;right:8px;bottom:-28px;opacity:.13}
+.about-panel h3{font-size:27px;color:var(--green);margin-bottom:14px}
+.about-panel p{color:#526359}
+.about-list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.about-list li{font-weight:700;display:flex;gap:10px;align-items:flex-start}
+.check{flex:none;background:#dcebc8;color:var(--green);width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:14px}
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.value{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 20px #183b2010}
+.value .ico{font-size:27px;margin-bottom:12px}
+.value h3{font-size:19px;color:var(--green);margin-bottom:7px}
+.value p{color:var(--muted);font-size:15px;margin:0}
+.classes{background:#f0f4e9}
+.class-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.class-card{background:#fff;border:1px solid #e1e9dc;border-radius:22px;padding:25px;position:relative;overflow:hidden;box-shadow:0 12px 30px #123d2c0b}
+.level{display:inline-grid;place-items:center;width:54px;height:54px;border-radius:17px;background:var(--green);color:#fff;font:800 25px "DM Sans";border:3px solid var(--lime);margin-bottom:16px}
+.class-card h3{font-size:20px;color:var(--green);margin-bottom:8px}
+.class-card p{color:var(--muted);font-size:15px}
+.time{display:inline-flex;gap:7px;align-items:center;background:#fff6d9;color:#604b12;border-radius:30px;padding:7px 12px;font-size:14px;font-weight:800}
+.class-card .btn{margin-top:18px;width:100%;font-size:14px;padding:10px}
+.package-note{text-align:center;color:var(--muted);margin-top:22px}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{padding:24px;background:#fff;border:1px solid var(--line);border-radius:20px}
+.feature-icon{width:52px;height:52px;border-radius:16px;background:#edf4e5;display:grid;place-items:center;font-size:25px;margin-bottom:15px}
+.feature h3{color:var(--green);font-size:19px;margin-bottom:8px}
+.feature p{color:var(--muted);font-size:15px;margin:0}
+.why{background:var(--green);color:#fff}
+.why .section-head h2{color:#fff}.why .section-head p{color:#d7e5d9}.why .kicker{color:var(--lime)}
+.why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
+.why-item{background:#ffffff10;border:1px solid #ffffff25;border-radius:18px;padding:20px 16px}
+.why-item b{display:block;color:var(--gold);font-size:17px;margin-bottom:7px}
+.why-item p{font-size:14px;color:#e1eee4;margin:0}
+.join-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}
+.join-step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;counter-increment:step}
+.join-step:before{content:"0" counter(step);display:block;color:var(--green2);font:800 28px "DM Sans";margin-bottom:12px}
+.join-step h3{font-size:19px;color:var(--green);margin-bottom:7px}
+.join-step p{color:var(--muted);font-size:15px;margin:0}
+.student-box{background:linear-gradient(120deg,#fff8e4,#f2f6e9);border:1px solid #ebdfb7;border-radius:26px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}
+.student-box h2{font-size:29px;color:var(--green);margin-bottom:10px}
+.student-box p{color:#58675c;max-width:700px}
+.student-actions{display:flex;flex-direction:column;gap:10px;min-width:260px}
+.contact{background:#f0f4e9}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}
+.contact-card h3{color:var(--green);font-size:23px;margin-bottom:16px}
+.contact-row{display:flex;gap:13px;padding:12px 0;border-bottom:1px solid var(--line)}
+.contact-row:last-child{border:0}
+.contact-row .ci{font-size:22px}
+.contact-row small{display:block;color:var(--muted);font-size:13px}
+.contact-row a{text-decoration:none;font-weight:800;color:var(--green)}
+.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.social a{background:#edf4e9;padding:8px 14px;border-radius:30px;text-decoration:none;font-size:14px;font-weight:800;color:var(--green)}
+.cta-card{background:var(--green);color:#fff;border-radius:22px;padding:32px;display:flex;flex-direction:column;justify-content:center}
+.cta-card h3{font-size:27px;margin-bottom:12px}
+.cta-card p{color:#dce9dd}
+.cta-card .btn{align-self:flex-start;margin-top:12px}
+footer{background:#0d2e21;color:#c8d8cb;padding:25px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
 [data-en]{display:none}
 body.en [data-ne]{display:none}
 body.en [data-en]{display:revert}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.chips{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}.chips li{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:4px;padding:4px 14px;font-weight:600;font-size:.95rem}
-.lvl{display:flex;align-items:center;gap:16px}
-.lvl .n{flex:none;width:64px;height:64px;border-radius:50%;background:var(--ink);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:"Noto Serif Devanagari",serif;font-size:2rem;font-weight:700;border:3px solid var(--gold)}
-.lvl h3{margin:0}
-.note{color:var(--muted);margin:16px 0 0}
-.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.steps li{counter-increment:s;position:relative;padding:14px 16px 14px 56px;background:var(--panel);border:1px solid var(--line);border-radius:6px;font-weight:600}
-.steps li:before{content:counter(s);position:absolute;left:14px;top:12px;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
-.alt2{background:var(--panel)}
-.btn.wa{background:#1f8f4d}.social{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}.social a{border:2px solid var(--ink);color:var(--ink);padding:6px 18px;border-radius:4px;text-decoration:none;font-weight:700}.social a:hover{background:var(--ink);color:var(--paper)}
-.hl{list-style:none;margin:0 0 14px;padding:0;max-width:34em}.hl li{position:relative;padding-left:30px;margin:6px 0;font-size:1.15rem}.hl li:before{content:"✓";position:absolute;left:0;top:0;color:var(--red);font-weight:700}
-.tm{margin:4px 0 0;color:var(--muted);font-weight:600}
-.hero-grid{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
-.flag{width:150px;justify-self:center}
-.flag svg{width:100%;height:auto;display:block;overflow:visible}
-@media (max-width:640px){.hero-grid{grid-template-columns:1fr}.flag{order:-1;width:110px;justify-self:start}}
+@media(max-width:900px){
+ nav{gap:12px}nav a{font-size:14px}
+ .hero-grid{grid-template-columns:1fr 330px;gap:25px}
+ .why-grid{grid-template-columns:repeat(3,1fr)}
+ .features-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+ .wrap{width:min(100% - 30px,560px)}
+ .navwrap{min-height:70px}
+ .menu{display:block}
+ nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--cream);padding:18px 22px 22px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);flex-direction:column;align-items:stretch}
+ nav.open{display:flex}
+ nav a{padding:5px 0}
+ .nav-actions .btn{display:none}
+ .hero{padding:55px 0}
+ .hero-grid{grid-template-columns:1fr}
+ .hero-art{min-height:250px;max-width:420px;width:100%;margin:auto}
+ .art-card{transform:none}
+ .hero-stamp{right:-5px;bottom:-5px;width:90px;height:90px;font-size:13px}
+ .trust-grid{grid-template-columns:repeat(2,1fr)}
+ .trust-item:nth-child(2){border-right:0}
+ .trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ section{padding:56px 0}
+ .about-grid,.contact-grid{grid-template-columns:1fr}
+ .value-grid,.class-grid,.features-grid,.join-grid{grid-template-columns:1fr}
+ .why-grid{grid-template-columns:repeat(2,1fr)}
+ .student-box{grid-template-columns:1fr;padding:25px}
+ .student-actions{min-width:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
-
-<header>
- <div class="wrap">
-  <div class="brand"><svg class="logo" viewBox="0 0 48 48" role="img" aria-label="MANBI logo"><rect width="48" height="48" rx="10" fill="#16213a"/><path d="M8 33c6-3 11-3 16 0 5-3 10-3 16 0V15c-6-3-11-3-16 0-5-3-10-3-16 0z" fill="#e7b53a"/><path d="M24 15v18" stroke="#16213a" stroke-width="2"/><path d="M13 29V19l5 6 6-8 6 8 5-6v10" fill="none" stroke="#b3262f" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg><span class="bt"><b>MANBI</b><small>Education Institute</small></span></div>
-  <nav>
-   <a href="#about"><span data-ne>हाम्रो बारेमा</span><span data-en>About</span></a>
-   <a href="#classes"><span data-ne>कक्षा</span><span data-en>Classes</span></a>
-   <a href="#students"><span data-ne>विद्यार्थी</span><span data-en>Students</span></a>
-   <a href="#materials"><span data-ne>सामग्री</span><span data-en>Materials</span></a>
-   <a href="#videos"><span data-ne>भिडियो</span><span data-en>Videos</span></a>
-   <a href="#contact"><span data-ne>सम्पर्क</span><span data-en>Contact</span></a>
-   <button id="lang" aria-label="Change language">EN</button>
-  </nav>
- </div>
-</header>
-
+<div class="topbar"><div class="wrap">
+ <span data-ne>🌾 कृषि लोकसेवा तयारीका लागि समर्पित संस्था</span><span data-en>🌾 Dedicated to Agriculture Loksewa preparation</span>
+ <span><span data-ne>फोन / WhatsApp:</span><span data-en>Call / WhatsApp:</span> <a href="tel:9763251680">9763251680</a></span>
+</div></div>
+<header><div class="wrap navwrap">
+ <a class="brand" href="#home" aria-label="MANBI home">
+  <svg class="logo" viewBox="0 0 48 48" role="img" aria-label="MANBI logo"><rect width="48" height="48" rx="12" fill="#123d2c"/><path d="M8 34c6-4 11-4 16 0 5-4 10-4 16 0V15c-6-3-11-3-16 0-5-3-10-3-16 0z" fill="#b9d85b"/><path d="M24 15v19" stroke="#123d2c" stroke-width="2"/><path d="M13 29V19l5 6 6-8 6 8 5-6v10" fill="none" stroke="#f2c14e" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/></svg>
+  <span class="brandtext"><strong>MANBI</strong><small>EDUCATION INSTITUTE</small></span>
+ </a>
+ <nav id="nav">
+  <a href="#about"><span data-ne>हाम्रो बारेमा</span><span data-en>About</span></a>
+  <a href="#classes"><span data-ne>तयारी कक्षा</span><span data-en>Courses</span></a>
+  <a href="#features"><span data-ne>हाम्रा सुविधा</span><span data-en>Features</span></a>
+  <a href="#students"><span data-ne>विद्यार्थी क्षेत्र</span><span data-en>Students</span></a>
+  <a href="#contact"><span data-ne>सम्पर्क</span><span data-en>Contact</span></a>
+  <button class="lang" id="lang" type="button">EN</button>
+ </nav>
+ <div class="nav-actions"><a class="btn green" href="https://wa.me/9779763251680" target="_blank" rel="noopener">WhatsApp</a><button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button></div>
+</div></header>
 <main>
-<div class="hero"><div class="wrap hero-grid"><div class="hero-text">
- <h1><span data-ne>कृषि लोकसेवाको तयारी, घरबाटै</span><span data-en>Agriculture Loksewa preparation, from home</span></h1>
- <ul class="hl">
-  <li><span data-ne>सबै कक्षा अनलाइनमार्फत घरबाटै पढ्न मिल्छ।</span><span data-en>Study every class online, from your own home.</span></li>
-  <li><span data-ne>अनुभवी सर तथा म्याडमहरूले पढाउनुहुन्छ।</span><span data-en>Learn from experienced teachers.</span></li>
-  <li><span data-ne>न्यून शुल्कमा गुणस्तरीय तयारी गर्न पाइन्छ।</span><span data-en>Get quality preparation at a low fee.</span></li>
- </ul>
- <a class="btn" href="tel:9763251680"><span data-ne>फोन गर्नुहोस्</span><span data-en>Call us</span></a>
- <a class="btn alt" href="#students"><span data-ne>विद्यार्थी क्षेत्र</span><span data-en>Student area</span></a>
-</div>
- <div class="flag" aria-label="Flag of Nepal" role="img">
-  <svg viewBox="-26 -22 362 450" xmlns="http://www.w3.org/2000/svg">
-   <rect x="-20" y="-6" width="7" height="430" rx="3" fill="#8a8f9c"/>
-   <circle cx="-16.5" cy="-10" r="8" fill="#e7b53a"/>
-   <defs>
-    <mask id="moonmask" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="400"><rect width="300" height="400" fill="#fff"/><circle cx="75" cy="91" r="41" fill="#000"/></mask>
-    <filter id="wave" x="-5%" y="-5%" width="115%" height="110%">
-     <feTurbulence id="turb" type="turbulence" baseFrequency="0.008 0.025" numOctaves="1" result="t">
-      <animate attributeName="baseFrequency" dur="7s" values="0.008 0.025;0.012 0.035;0.008 0.025" repeatCount="indefinite"/>
-     </feTurbulence>
-     <feDisplacementMap in="SourceGraphic" in2="t" scale="12" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-   </defs>
-   <g id="flagbody" filter="url(#wave)">
-    <polygon points="0,400 300,400 87.9,187.9 300,187.9 0,0" fill="#dc143c" stroke="#003893" stroke-width="14" stroke-linejoin="miter" paint-order="stroke"/>
-    <circle cx="75" cy="115" r="48" fill="#fff" mask="url(#moonmask)"/>
-    <polygon points="75.0,232.9 85.4,255.3 105.5,241.1 103.3,265.6 127.8,263.4 113.6,283.5 136.0,293.9 113.6,304.3 127.8,324.4 103.3,322.2 105.5,346.7 85.4,332.5 75.0,354.9 64.6,332.5 44.5,346.7 46.7,322.2 22.2,324.4 36.4,304.3 14.0,293.9 36.4,283.5 22.2,263.4 46.7,265.6 44.5,241.1 64.6,255.3" fill="#fff"/>
-    <circle cx="75" cy="293.9" r="37.5" fill="#fff"/>
-   </g>
-  </svg>
- </div></div></div>
-
-<section id="about"><div class="wrap">
- <h2><span data-ne>हाम्रो बारेमा</span><span data-en>About us</span></h2>
- <p><span data-ne>MANBI Education Institute कृषि तर्फको लोकसेवा तयारीमै केन्द्रित संस्था हो। कक्षा, नोट्स, मक टेस्ट र मार्गदर्शन, परीक्षाका लागि चाहिने सबै एकै ठाउँमा।</span>
- <span data-en>MANBI Education Institute focuses only on agriculture Loksewa preparation: classes, notes, mock tests and guidance, everything you need for the exam in one place.</span></p>
-</div></section>
-
-<section id="classes"><div class="wrap">
- <h2><span data-ne>कुन तहको तयारी?</span><span data-en>Which level are you preparing for?</span></h2>
- <div class="grid">
-  <div class="card lvl"><div class="n">४</div><div><h3><span data-ne>कृषि चौथो तह (JTA)</span><span data-en>Agriculture 4th level (JTA)</span></h3><p class="tm"><span data-ne>समय: बिहान ६:०० बजेदेखि</span><span data-en>Time: From 6:00 AM</span></p></div></div>
-  <div class="card lvl"><div class="n">५</div><div><h3><span data-ne>कृषि पाँचौँ तह (JT)</span><span data-en>Agriculture 5th level (JT)</span></h3><p class="tm"><span data-ne>समय: बिहान ६:०० बजेदेखि</span><span data-en>Time: From 6:00 AM</span></p></div></div>
-  <div class="card lvl"><div class="n">७</div><div><h3><span data-ne>अधिकृत सातौँ तह</span><span data-en>Officer 7th level</span></h3><p class="tm"><span data-ne>समय: बेलुका ७:०० बजेदेखि</span><span data-en>Time: From 7:00 PM</span></p></div></div>
+<section class="hero" id="home"><div class="wrap hero-grid">
+ <div>
+  <div class="eyebrow"><span class="dot"></span><span data-ne>कृषि लोकसेवा तयारीको भरपर्दो गन्तव्य</span><span data-en>Your destination for Agriculture Loksewa preparation</span></div>
+  <h1><span data-ne>तपाईंको कृषि लोकसेवा सपना, <em>हाम्रो साझा लक्ष्य।</em></span><span data-en>Your Agriculture Loksewa dream, <em>our shared mission.</em></span></h1>
+  <p class="hero-copy"><span data-ne>सही मार्गदर्शन, योजनाबद्ध अध्ययन र निरन्तर अभ्याससँगै आफ्नो सरकारी सेवाको लक्ष्यतर्फ आत्मविश्वासका साथ अघि बढ्नुहोस्।</span><span data-en>Move confidently toward your public-service goal with expert guidance, structured learning and consistent practice.</span></p>
+  <ul class="hero-points">
+   <li><span data-ne>अनुभवी प्रशिक्षक</span><span data-en>Experienced instructors</span></li>
+   <li><span data-ne>लाइभ तथा रेकर्डेड कक्षा</span><span data-en>Live and recorded classes</span></li>
+   <li><span data-ne>नोट्स र मोक टेस्ट</span><span data-en>Notes and mock tests</span></li>
+  </ul>
+  <div class="hero-buttons">
+   <a class="btn primary" href="https://wa.me/9779763251680?text=Namaste%2C%20I%20want%20to%20know%20about%20Agriculture%20Loksewa%20classes." target="_blank" rel="noopener"><span data-ne>आजै भर्नाका लागि सम्पर्क गर्नुहोस् →</span><span data-en>Enquire about admission →</span></a>
+   <a class="btn outline" href="#classes"><span data-ne>कक्षा हेर्नुहोस्</span><span data-en>Explore courses</span></a>
+  </div>
  </div>
- <p class="note"><span data-ne>शुल्कको विवरणका लागि सम्पर्क गर्नुहोस्।</span><span data-en>Contact us for fee details.</span></p>
+ <div class="hero-art"><div class="art-card">
+  <div class="art-icon">🌱</div>
+  <h3><span data-ne>लक्ष्य स्पष्ट। तयारी उत्कृष्ट।</span><span data-en>Clear goals. Better preparation.</span></h3>
+  <p><span data-ne>कृषि लोकसेवा परीक्षालाई लक्षित गर्दै विषयगत ज्ञान, अभ्यास र मार्गदर्शनलाई एउटै सिकाइ यात्रामा जोड्दै।</span><span data-en>Bringing subject knowledge, practice and guidance together in one focused learning journey.</span></p>
+  <div class="art-tags"><span>Ag. JTA / JT</span><span>Officer Level</span><span>Loksewa</span></div>
+ </div><div class="hero-stamp"><span data-ne>सिकाइ<br>अभ्यास<br>सफलता</span><span data-en>LEARN<br>PRACTISE<br>SUCCEED</span></div></div>
 </div></section>
-
-<section id="options"><div class="wrap">
- <h2><span data-ne>तपाईंलाई जे चाहिन्छ, त्यही छान्नुहोस्</span><span data-en>Choose only what you need</span></h2>
- <div class="grid">
-  <div class="card"><h3><span data-ne>लाइभ कक्षा</span><span data-en>Live class</span></h3><p><span data-ne>सर म्याडमसँग सिधै जोडिएर पढ्नुहोस्।</span><span data-en>Learn directly with your teachers.</span></p></div>
-  <div class="card"><h3><span data-ne>रेकर्डेड भिडियो मात्र</span><span data-en>Recorded videos only</span></h3><p><span data-ne>आफ्नै समयमा, जति पटक पनि हेर्नुहोस्।</span><span data-en>Watch in your own time, as many times as you like.</span></p></div>
-  <div class="card"><h3><span data-ne>PDF नोट्स मात्र</span><span data-en>PDF notes only</span></h3><p><span data-ne>अध्ययन सामग्री मात्र लिनुहोस्।</span><span data-en>Take just the study material.</span></p></div>
+<div class="trust"><div class="wrap trust-grid">
+ <div class="trust-item"><strong><span data-ne>लक्षित तयारी</span><span data-en>Focused preparation</span></strong><span data-ne>कृषि लोकसेवामा केन्द्रित</span><span data-en>Agriculture Loksewa</span></div>
+ <div class="trust-item"><strong><span data-ne>लाइभ कक्षा</span><span data-en>Live classes</span></strong><span data-ne>अनलाइन सिकाइ</span><span data-en>Learn online</span></div>
+ <div class="trust-item"><strong><span data-ne>नियमित अभ्यास</span><span data-en>Regular practice</span></strong><span data-ne>मोक टेस्ट तथा मूल्याङ्कन</span><span data-en>Mock tests and review</span></div>
+ <div class="trust-item"><strong><span data-ne>व्यक्तिगत सहयोग</span><span data-en>Personal support</span></strong><span data-ne>आवश्यकताअनुसार मार्गदर्शन</span><span data-en>Guidance when needed</span></div>
+</div></div>
+<section id="about"><div class="wrap about-grid">
+ <div><div class="kicker"><span data-ne>हाम्रो परिचय</span><span data-en>Who we are</span></div>
+  <h2 style="font-size:clamp(28px,4vw,40px);color:var(--green);margin-bottom:16px"><span data-ne>कृषि लोकसेवा तयारीका लागि एकै ठाउँमा सम्पूर्ण सहयोग</span><span data-en>Everything you need for Agriculture Loksewa preparation, in one place</span></h2>
+  <p style="color:var(--muted)"><span data-ne><b>MANBI Education Institute</b> कृषि क्षेत्रका लोकसेवा परीक्षाको तयारीमा केन्द्रित शैक्षिक संस्था हो। कृषि चौथो, पाँचौँ तथा अधिकृत सातौँ तहका परीक्षार्थीलाई लक्षित गरी हामीले कक्षा, अध्ययन सामग्री, नियमित परीक्षा र व्यक्तिगत मार्गदर्शनलाई व्यवस्थित रूपमा उपलब्ध गराउने उद्देश्य राखेका छौँ।</span><span data-en><b>MANBI Education Institute</b> is dedicated to Agriculture Loksewa preparation. We aim to support candidates preparing for Agriculture 4th, 5th and Officer 7th level examinations through structured classes, study materials, regular tests and personal guidance.</span></p>
+  <ul class="about-list">
+   <li><span class="check">✓</span><span data-ne>परीक्षाको पाठ्यक्रम र आवश्यकतामा आधारित अध्ययन</span><span data-en>Learning aligned with the exam syllabus and requirements</span></li>
+   <li><span class="check">✓</span><span data-ne>विषयवस्तु बुझाइसँगै प्रश्न अभ्यासमा जोड</span><span data-en>Emphasis on understanding concepts and practising questions</span></li>
+   <li><span class="check">✓</span><span data-ne>विद्यार्थीको प्रगतिअनुसार निरन्तर सहजीकरण</span><span data-en>Ongoing support based on student progress</span></li>
+  </ul>
+ </div>
+ <div class="about-panel"><div style="font-size:38px;margin-bottom:12px">🎓 🌾</div>
+  <h3><span data-ne>तयारी मात्र होइन, आत्मविश्वास पनि</span><span data-en>More than preparation — build confidence</span></h3>
+  <p><span data-ne>लोकसेवा तयारी लामो र अनुशासित यात्रा हो। त्यसैले नियमित कक्षा, पुनरावृत्ति, अभ्यास परीक्षा र सही मार्गदर्शनलाई हाम्रो सिकाइ प्रक्रियाको महत्वपूर्ण हिस्सा बनाइएको छ।</span><span data-en>Loksewa preparation takes discipline and consistency. That is why regular classes, revision, practice exams and guidance are central to our learning approach.</span></p>
  </div>
 </div></section>
-
-<section id="why"><div class="wrap">
- <h2><span data-ne>किन MANBI?</span><span data-en>Why MANBI?</span></h2>
- <div class="grid">
-  <div class="card"><h3><span data-ne>नाम निस्कँदासम्म एउटै शुल्क</span><span data-en>One fee until you are selected</span></h3><p><span data-ne>एकपटक भर्ना भएपछि लोकसेवामा तपाईंको नाम नआउँदासम्म सोही शुल्कमा पढाइ जारी।</span><span data-en>Once enrolled, you keep studying at the same fee until your name appears in a Loksewa result.</span></p></div>
-  <div class="card"><h3><span data-ne>अनुभवी सर म्याडम</span><span data-en>Experienced teachers</span></h3><p><span data-ne>विद्यार्थीले सजिलै बुझ्ने गरी परीक्षामा काम लाग्ने तरिकाले पढाइ।</span><span data-en>Clear, exam-focused teaching that students can follow easily.</span></p></div>
-  <div class="card"><h3><span data-ne>मक टेस्ट</span><span data-en>Mock tests</span></h3><p><span data-ne>नियमित परीक्षा दिएर आफ्नो प्रगति आफैं थाहा पाउनुहोस्।</span><span data-en>Take regular tests and see your own progress.</span></p></div>
-  <div class="card"><h3><span data-ne>पर्सनल गाइडेन्स</span><span data-en>Personal guidance</span></h3><p><span data-ne>हरेक विद्यार्थीको आवश्यकता अनुसार व्यक्तिगत मार्गदर्शन।</span><span data-en>Guidance matched to each student's needs.</span></p></div>
-  <div class="card"><h3><span data-ne>कक्षा बाहेक पनि सहयोग</span><span data-en>Support outside class</span></h3><p><span data-ne>कक्षाको समय बाहेक अन्य समयमा पनि राम्रो सहजीकरण।</span><span data-en>Good support even outside class hours.</span></p></div>
+<section class="classes" id="classes"><div class="wrap">
+ <div class="section-head"><div class="kicker"><span data-ne>हाम्रा तयारी कक्षा</span><span data-en>Our preparation courses</span></div>
+  <h2><span data-ne>आफ्नो लक्ष्यअनुसार तह छान्नुहोस्</span><span data-en>Choose the level that matches your goal</span></h2>
+  <p><span data-ne>कृषि सेवाका विभिन्न तहका परीक्षार्थीका लागि लक्षित अनलाइन तयारी कक्षा।</span><span data-en>Focused online preparation classes for different levels of Agriculture Service examinations.</span></p>
+ </div>
+ <div class="class-grid">
+  <article class="class-card"><div class="level">४</div><h3><span data-ne>कृषि चौथो तह (JTA)</span><span data-en>Agriculture 4th Level (JTA)</span></h3><p><span data-ne>चौथो तहको पाठ्यक्रमअनुसार आधारभूत तथा प्राविधिक विषयको व्यवस्थित तयारी।</span><span data-en>Structured preparation in foundational and technical subjects based on the 4th-level syllabus.</span></p><span class="time">◷ <span data-ne>कक्षा समय: बेलुका ६:०० बजे</span><span data-en>Class time: 6:00 PM</span></span><a class="btn green" href="https://wa.me/9779763251680?text=मलाई कृषि चौथो तह (JTA) को तयारी कक्षाबारे जानकारी चाहियो।" target="_blank" rel="noopener"><span data-ne>विवरण लिनुहोस् →</span><span data-en>Enquire now →</span></a></article>
+  <article class="class-card"><div class="level">५</div><h3><span data-ne>कृषि पाँचौँ तह (JT)</span><span data-en>Agriculture 5th Level (JT)</span></h3><p><span data-ne>पाँचौँ तहको परीक्षालाई लक्षित विषयगत अध्ययन, प्रश्न अभ्यास र नियमित मूल्याङ्कन।</span><span data-en>Subject-focused study, question practice and regular assessment for the 5th-level examination.</span></p><span class="time">◷ <span data-ne>कक्षा समय: बेलुका ६:०० बजे</span><span data-en>Class time: 6:00 PM</span></span><a class="btn green" href="https://wa.me/9779763251680?text=मलाई कृषि पाँचौँ तह (JT) को तयारी कक्षाबारे जानकारी चाहियो।" target="_blank" rel="noopener"><span data-ne>विवरण लिनुहोस् →</span><span data-en>Enquire now →</span></a></article>
+  <article class="class-card"><div class="level">७</div><h3><span data-ne>कृषि अधिकृत सातौँ तह</span><span data-en>Agriculture Officer 7th Level</span></h3><p><span data-ne>अधिकृत तहको परीक्षाका लागि गहन विषयगत तयारी, विश्लेषणात्मक अध्ययन र अभ्यास।</span><span data-en>In-depth subject preparation, analytical learning and practice for the Officer-level examination.</span></p><span class="time">◷ <span data-ne>कक्षा समय: बेलुका ७:३० बजे</span><span data-en>Class time: 7:30 PM</span></span><a class="btn green" href="https://wa.me/9779763251680?text=मलाई कृषि अधिकृत सातौँ तहको तयारी कक्षाबारे जानकारी चाहियो।" target="_blank" rel="noopener"><span data-ne>विवरण लिनुहोस् →</span><span data-en>Enquire now →</span></a></article>
+ </div>
+ <p class="package-note"><span data-ne>कक्षा शुल्क, प्याकेज तथा भर्नासम्बन्धी विस्तृत जानकारीका लागि हामीलाई सम्पर्क गर्नुहोस्।</span><span data-en>Contact us for detailed information about fees, packages and admission.</span></p>
+</div></section>
+<section id="features"><div class="wrap">
+ <div class="section-head"><div class="kicker"><span data-ne>हाम्रो सिकाइ प्रणाली</span><span data-en>Our learning approach</span></div>
+  <h2><span data-ne>तपाईंको तयारीलाई प्रभावकारी बनाउने सुविधा</span><span data-en>Learning support designed to strengthen your preparation</span></h2>
+  <p><span data-ne>पढाइ, अभ्यास र मार्गदर्शनलाई एउटै प्रणालीमा जोडेर निरन्तर प्रगति गर्न सहयोग।</span><span data-en>Bring learning, practice and guidance together to keep moving forward.</span></p>
+ </div>
+ <div class="features-grid">
+  <article class="feature"><div class="feature-icon">👨‍🏫</div><h3><span data-ne>अनुभवी प्रशिक्षकहरू</span><span data-en>Experienced instructors</span></h3><p><span data-ne>विषयवस्तुलाई सरल, स्पष्ट र परीक्षामुखी तरिकाले बुझाउने कक्षा।</span><span data-en>Clear, accessible and exam-oriented teaching.</span></p></article>
+  <article class="feature"><div class="feature-icon">📚</div><h3><span data-ne>विशेष अध्ययन सामग्री तथा नोट्स</span><span data-en>Focused study materials and notes</span></h3><p><span data-ne>पुनरावृत्ति र तयारीलाई सहज बनाउने व्यवस्थित अध्ययन सामग्री।</span><span data-en>Organised materials to make revision and preparation easier.</span></p></article>
+  <article class="feature"><div class="feature-icon">🎥</div><h3><span data-ne>रेकर्डेड भिडियो कक्षा</span><span data-en>Recorded video lessons</span></h3><p><span data-ne>छुटेका वा दोहोर्‍याएर हेर्नुपर्ने पाठ आफ्नै समयमा अध्ययन गर्नुहोस्।</span><span data-en>Revisit lessons and study at a time that suits you.</span></p></article>
+  <article class="feature"><div class="feature-icon">📝</div><h3><span data-ne>नियमित नमुना परीक्षा / Mock Test</span><span data-en>Regular mock tests</span></h3><p><span data-ne>प्रश्न अभ्यास, समय व्यवस्थापन र आफ्नो तयारीको मूल्याङ्कन।</span><span data-en>Practise questions, manage time and assess your preparation.</span></p></article>
+  <article class="feature"><div class="feature-icon">🤝</div><h3><span data-ne>व्यक्तिगत सहजीकरण</span><span data-en>Personal guidance</span></h3><p><span data-ne>आफ्नो कमजोरी पहिचान गरी सुधार गर्न आवश्यक सहयोग।</span><span data-en>Support to identify learning gaps and work on improvement.</span></p></article>
+  <article class="feature"><div class="feature-icon">💻</div><h3><span data-ne>अनलाइन सिकाइ सुविधा</span><span data-en>Online learning access</span></h3><p><span data-ne>घरबाटै कक्षा तथा उपलब्ध अध्ययन सामग्रीमा पहुँच।</span><span data-en>Access classes and available learning resources from home.</span></p></article>
  </div>
 </div></section>
-
+<section class="why"><div class="wrap">
+ <div class="section-head"><div class="kicker"><span data-ne>MANBI किन रोज्ने?</span><span data-en>Why choose MANBI?</span></div>
+  <h2><span data-ne>तपाईंको लक्ष्यलाई प्राथमिकता दिने तयारी</span><span data-en>Preparation that puts your goal first</span></h2>
+  <p><span data-ne>हामी केवल कक्षा सञ्चालनमा सीमित छैनौँ; तपाईंको सिकाइ र तयारी यात्रामा निरन्तर साथ दिने प्रयास गर्छौँ।</span><span data-en>We aim to support your learning journey beyond the classroom.</span></p>
+ </div>
+ <div class="why-grid">
+  <div class="why-item"><b><span data-ne>परीक्षामुखी अध्ययन</span><span data-en>Exam-focused learning</span></b><p><span data-ne>पाठ्यक्रम र परीक्षाको आवश्यकतामा केन्द्रित।</span><span data-en>Aligned with syllabus and exam needs.</span></p></div>
+  <div class="why-item"><b><span data-ne>अनुभवी शिक्षक</span><span data-en>Experienced teachers</span></b><p><span data-ne>बुझाइ र अभ्यासलाई प्राथमिकता।</span><span data-en>Focused on understanding and practice.</span></p></div>
+  <div class="why-item"><b><span data-ne>नियमित मोक टेस्ट</span><span data-en>Regular mock tests</span></b><p><span data-ne>आफ्नो तयारीको अवस्था थाहा पाउनुहोस्।</span><span data-en>Track your preparation progress.</span></p></div>
+  <div class="why-item"><b><span data-ne>व्यक्तिगत मार्गदर्शन</span><span data-en>Personal guidance</span></b><p><span data-ne>आवश्यकताअनुसार सहयोग र सहजीकरण।</span><span data-en>Support based on your needs.</span></p></div>
+  <div class="why-item"><b><span data-ne>नाम निस्कँदासम्म एउटै शुल्क*</span><span data-en>Same fee until selection*</span></b><p><span data-ne>भर्ना सर्तअनुसार छनोट नहुँदासम्म अध्ययन निरन्तरता।</span><span data-en>Continued study under the applicable admission terms.</span></p></div>
+ </div>
+ <p style="font-size:13px;color:#c8d8cb;margin:15px 0 0;text-align:center"><span data-ne>* लागू हुने प्याकेज तथा भर्नाका सर्तहरूबारे संस्थाबाट पुष्टि गर्नुहोस्।</span><span data-en>* Please confirm applicable packages and admission terms with the institute.</span></p>
+</div></section>
 <section id="join"><div class="wrap">
- <h2><span data-ne>कसरी जोडिने?</span><span data-en>How to join</span></h2>
- <ol class="steps">
-  <li><span data-ne>हामीलाई फोन वा इमेल गर्नुहोस्</span><span data-en>Call or email us</span></li>
-  <li><span data-ne>आफ्नो तह र पढ्ने तरिका छान्नुहोस्</span><span data-en>Choose your level and way of studying</span></li>
-  <li><span data-ne>अनलाइन पढाइ सुरु गर्नुहोस्</span><span data-en>Start studying online</span></li>
- </ol>
+ <div class="section-head"><div class="kicker"><span data-ne>भर्ना प्रक्रिया</span><span data-en>Admission process</span></div><h2><span data-ne>MANBI सँग कसरी जोडिने?</span><span data-en>How to join MANBI</span></h2><p><span data-ne>आफ्नो लक्ष्यअनुसार कक्षा छान्नुहोस् र तयारी सुरु गर्नुहोस्।</span><span data-en>Choose your course and take the first step in your preparation.</span></p></div>
+ <div class="join-grid">
+  <div class="join-step"><h3><span data-ne>सम्पर्क गर्नुहोस्</span><span data-en>Get in touch</span></h3><p><span data-ne>फोन वा WhatsApp मार्फत कक्षा र भर्नाबारे जानकारी लिनुहोस्।</span><span data-en>Ask us about classes and admission by phone or WhatsApp.</span></p></div>
+  <div class="join-step"><h3><span data-ne>तह तथा प्याकेज छान्नुहोस्</span><span data-en>Choose your level and package</span></h3><p><span data-ne>आफ्नो परीक्षा तह र आवश्यकताअनुसार उपयुक्त विकल्प रोज्नुहोस्।</span><span data-en>Select the option that fits your exam level and needs.</span></p></div>
+  <div class="join-step"><h3><span data-ne>तयारी सुरु गर्नुहोस्</span><span data-en>Begin your preparation</span></h3><p><span data-ne>कक्षा तथा उपलब्ध अनलाइन अध्ययन सामग्रीसँग जोडिएर पढाइ सुरु गर्नुहोस्।</span><span data-en>Start learning through classes and available online resources.</span></p></div>
+ </div>
 </div></section>
-
-<section id="students"><div class="wrap">
- <h2><span data-ne>भर्ना भएका विद्यार्थीका लागि</span><span data-en>For enrolled students</span></h2>
- <p><span data-ne>भर्ना भएका विद्यार्थीले आफ्नो तह छानेर WhatsApp मा अनुरोध पठाउनुहोस्। हामीले चिनेपछि तपाईंलाई Google Classroom मा जोडिन्छ। लाइभ कक्षाको जुम लिंक, PDF नोट्स र रेकर्डेड भिडियो Classroom भित्र राखिन्छन्।</span>
- <span data-en>Enrolled students: choose your level and send a request on WhatsApp. Once we confirm who you are, we will add you to Google Classroom. The live class Zoom link, PDF notes and recorded videos are kept inside Classroom.</span></p>
- <div id="clsList"></div>
-</div></section>
-
-<section id="materials"><div class="wrap">
- <h2><span data-ne>अध्ययन सामग्री (PDF)</span><span data-en>Study materials (PDF)</span></h2>
- <ul class="list" id="matList"></ul>
-</div></section>
-
-<section id="videos"><div class="wrap">
- <h2><span data-ne>भिडियो पाठ</span><span data-en>Video lessons</span></h2>
- <div class="grid" id="vidList"></div>
-</div></section>
-
-<section id="contact"><div class="wrap">
- <h2><span data-ne>सम्पर्क</span><span data-en>Contact</span></h2>
- <p><span data-ne>ठेगाना: पोखरा, कास्की<br>फोन / WhatsApp: <a href="tel:9763251680">9763251680</a><br>इमेल: <a href="mailto:manbieducationinstitute@gmail.com">manbieducationinstitute@gmail.com</a></span>
- <span data-en>Address: Pokhara, Kaski<br>Phone / WhatsApp: <a href="tel:9763251680">9763251680</a><br>Email: <a href="mailto:manbieducationinstitute@gmail.com">manbieducationinstitute@gmail.com</a></span></p>
- <a class="btn" href="tel:9763251680"><span data-ne>फोन गर्नुहोस्</span><span data-en>Call us</span></a>
- <a class="btn wa" href="https://wa.me/9779763251680" target="_blank" rel="noopener">WhatsApp</a>
- <a class="btn alt" href="mailto:manbieducationinstitute@gmail.com"><span data-ne>इमेल पठाउनुहोस्</span><span data-en>Send email</span></a>
- <div class="social" id="social"></div>
+<section id="students"><div class="wrap"><div class="student-box">
+ <div><div class="kicker"><span data-ne>विद्यार्थी क्षेत्र</span><span data-en>Student access</span></div><h2><span data-ne>भर्ना भइसकेका विद्यार्थीका लागि</span><span data-en>Already enrolled at MANBI?</span></h2>
+ <p><span data-ne>आफ्नो तहअनुसार WhatsApp मा Classroom access को अनुरोध पठाउनुहोस्। विवरण पुष्टि भएपछि तपाईंलाई Google Classroom मा जोडिनेछ। उपलब्ध Zoom link, PDF नोट्स र रेकर्डेड भिडियोहरू Classroom मार्फत प्राप्त गर्न सक्नुहुनेछ।</span><span data-en>Send a Google Classroom access request through WhatsApp for your level. After verification, you will be added to the classroom, where available Zoom links, PDF notes and recorded videos can be accessed.</span></p></div>
+ <div class="student-actions">
+  <a class="btn whatsapp" href="https://wa.me/9779763251680?text=नमस्ते, म MANBI मा भर्ना भएको विद्यार्थी हुँ।%0Aनाम:%0Aतह: कृषि चौथो / पाँचौँ तह%0AGmail:%0Aकृपया मलाई Google Classroom मा जोड्नुहोस्।" target="_blank" rel="noopener"><span data-ne>चौथो / पाँचौँ तह – अनुरोध पठाउनुहोस्</span><span data-en>4th / 5th Level – Request access</span></a>
+  <a class="btn green" href="https://wa.me/9779763251680?text=नमस्ते, म MANBI मा भर्ना भएको विद्यार्थी हुँ।%0Aनाम:%0Aतह: अधिकृत सातौँ तह%0AGmail:%0Aकृपया मलाई Google Classroom मा जोड्नुहोस्।" target="_blank" rel="noopener"><span data-ne>अधिकृत सातौँ तह – अनुरोध पठाउनुहोस्</span><span data-en>Officer 7th Level – Request access</span></a>
+ </div>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap">
+ <div class="section-head"><div class="kicker"><span data-ne>हामीसँग जोडिनुहोस्</span><span data-en>Connect with us</span></div><h2><span data-ne>तपाईंको तयारी यात्राको सुरुवात आजै गर्नुहोस्</span><span data-en>Start your preparation journey today</span></h2><p><span data-ne>कक्षा, शुल्क, भर्ना तथा अन्य जानकारीका लागि हामीलाई सम्पर्क गर्नुहोस्।</span><span data-en>Contact us for course, fee, admission and other information.</span></p></div>
+ <div class="contact-grid">
+  <div class="contact-card"><h3><span data-ne>सम्पर्क विवरण</span><span data-en>Contact information</span></h3>
+   <div class="contact-row"><span class="ci">📍</span><div><small><span data-ne>ठेगाना</span><span data-en>Address</span></small><b><span data-ne>पोखरा, कास्की, नेपाल</span><span data-en>Pokhara, Kaski, Nepal</span></b></div></div>
+   <div class="contact-row"><span class="ci">📞</span><div><small><span data-ne>फोन / WhatsApp</span><span data-en>Phone / WhatsApp</span></small><a href="tel:9763251680">9763251680</a></div></div>
+   <div class="contact-row"><span class="ci">✉️</span><div><small>Email</small><a href="mailto:manbieducationinstitute@gmail.com">manbieducationinstitute@gmail.com</a></div></div>
+   <div class="social">
+    <a href="https://www.facebook.com/profile.php?id=100066924811046" target="_blank" rel="noopener">Facebook ↗</a>
+    <a href="https://www.tiktok.com/@manbieducationinstitute" target="_blank" rel="noopener">TikTok ↗</a>
+    <a href="https://www.youtube.com/@MANBIEDUCATIONINSTITUTE" target="_blank" rel="noopener">YouTube ↗</a>
+   </div>
+  </div>
+  <div class="cta-card"><div style="font-size:36px;margin-bottom:12px">🌾</div><h3><span data-ne>तयारीमा ढिलाइ किन?</span><span data-en>Why wait to get started?</span></h3><p><span data-ne>आफ्नो लक्ष्य, तह र आवश्यकताबारे हामीसँग कुरा गर्नुहोस्। तपाईंको तयारीका लागि उपयुक्त कक्षा तथा उपलब्ध सुविधाबारे जानकारी लिनुहोस्।</span><span data-en>Tell us about your goal, level and learning needs. Find out about the classes and support available for your preparation.</span></p><a class="btn primary" href="https://wa.me/9779763251680" target="_blank" rel="noopener">WhatsApp मा सम्पर्क गर्नुहोस् →</a></div>
+ </div>
 </div></section>
 </main>
-
-<footer>© <span id="yr"></span> MANBI Education Institute</footer>
-
+<footer><div class="wrap"><span>© <span id="year"></span> MANBI Education Institute. <span data-ne>सर्वाधिकार सुरक्षित।</span><span data-en>All rights reserved.</span></span><span data-ne>कृषि लोकसेवा तयारीका लागि समर्पित</span><span data-en>Dedicated to Agriculture Loksewa Preparation</span></div></footer>
 <script>
-/* ===== यहाँ मात्र सम्पादन गर्नुहोस् / EDIT ONLY THIS PART ===== */
-
-// PDF सामग्री: Google Drive मा अपलोड गरी "Anyone with the link" बनाएर लिंक यहाँ राख्नुहोस्
-const MATERIALS = [
-  // निःशुल्क नमुना PDF (सबैले देख्ने) चाहिए मात्र यहाँ राख्नुहोस्। खाली भए यो भाग लुक्छ।
-  // { ne: "सामान्य ज्ञान नोट", en: "General knowledge notes", url: "https://..." }
-];
-
-// भिडियो: YouTube भिडियो लिंकको अन्तिम भाग (ID) यहाँ राख्नुहोस्। उदाहरण: youtube.com/watch?v=ABC123 → "ABC123"
-const VIDEOS = [
-  // { ne: "पहिलो कक्षा", en: "Lesson 1", id: "ABC123" }
-];
-
-// सोशल मिडिया लिंक: आफ्नो पेज/च्यानलको पूरा लिंक "" भित्र टाँस्नुहोस्। खाली छोडे बटन देखिँदैन।
-const SOCIAL = {
-  facebook: "https://www.facebook.com/profile.php?id=100066924811046",   // जस्तै: "https://www.facebook.com/तपाईंको-पेज"
-  tiktok:   "https://www.tiktok.com/@manbieducationinstitute",   // जस्तै: "https://www.tiktok.com/@तपाईंको-नाम"
-  youtube:  "https://www.youtube.com/@MANBIEDUCATIONINSTITUTE"    // जस्तै: "https://www.youtube.com/@तपाईंको-च्यानल"
-};
-
-/* ===== यसमुनि नछुनुहोस् / DO NOT EDIT BELOW ===== */
-const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-
-document.getElementById('matList').innerHTML = MATERIALS.length
-  ? MATERIALS.map(m => `<li><span><span data-ne>${esc(m.ne)}</span><span data-en>${esc(m.en)}</span></span>
-      <a href="${esc(m.url)}" target="_blank" rel="noopener"><span data-ne>खोल्नुहोस् / डाउनलोड</span><span data-en>Open / Download</span></a></li>`).join('')
-  : '<li class="empty"><span data-ne>सामग्री चाँडै थपिनेछ।</span><span data-en>Materials coming soon.</span></li>';
-
-document.getElementById('vidList').innerHTML = VIDEOS.length
-  ? VIDEOS.map(v => `<div><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${esc(v.id)}" title="${esc(v.en)}" loading="lazy" allowfullscreen></iframe></div>
-      <h3 style="margin-top:8px;font-size:1rem"><span data-ne>${esc(v.ne)}</span><span data-en>${esc(v.en)}</span></h3></div>`).join('')
-  : '<p class="empty"><span data-ne>भिडियो चाँडै थपिनेछ।</span><span data-en>Videos coming soon.</span></p>';
-
-const CLS_NAMES = {junior:['कृषि चौथो / पाँचौँ तह','Agriculture 4th / 5th level'], officer:['अधिकृत सातौँ तह','Officer 7th level']};
-document.getElementById('clsList').innerHTML = Object.keys(CLS_NAMES).map(k => {
-  const msg = 'नमस्ते, म MANBI Education Institute मा भर्ना भएको विद्यार्थी हुँ।\nनाम: \nतह: ' + CLS_NAMES[k][0] + '\nGmail: \nकृपया मलाई Classroom मा जोड्नुहोस्।';
-  return `<a class="btn wa" href="https://wa.me/9779763251680?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener"><span data-ne>${CLS_NAMES[k][0]}: Classroom का लागि अनुरोध</span><span data-en>${CLS_NAMES[k][1]}: Request Classroom access</span></a>`;
-}).join('');
-[['materials',MATERIALS],['videos',VIDEOS]].forEach(([id,arr]) => {
-  if(!arr.length){
-    document.getElementById(id).style.display = 'none';
-    document.querySelectorAll('a[href="#'+id+'"]').forEach(a => a.style.display = 'none');
-  }
-});
-const SOC_NAMES = {facebook:'Facebook', tiktok:'TikTok', youtube:'YouTube'};
-document.getElementById('social').innerHTML = Object.keys(SOC_NAMES).filter(k => SOCIAL[k])
-  .map(k => `<a href="${esc(SOCIAL[k])}" target="_blank" rel="noopener">${SOC_NAMES[k]}</a>`).join('');
-
-if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const b = document.getElementById('flagbody'); if (b) b.removeAttribute('filter');
-}
-const btn = document.getElementById('lang');
+const langButton=document.getElementById('lang');
 function setLang(en){
-  document.body.classList.toggle('en', en);
-  document.documentElement.lang = en ? 'en' : 'ne';
-  btn.textContent = en ? 'नेपाली' : 'EN';
-  try{ localStorage.setItem('lang', en ? 'en' : 'ne'); }catch(e){}
+ document.body.classList.toggle('en',en);
+ document.documentElement.lang=en?'en':'ne';
+ langButton.textContent=en?'नेपाली':'EN';
+ try{localStorage.setItem('manbi-language',en?'en':'ne')}catch(e){}
 }
-btn.onclick = () => setLang(!document.body.classList.contains('en'));
-try{ if(localStorage.getItem('lang') === 'en') setLang(true); }catch(e){}
-document.getElementById('yr').textContent = new Date().getFullYear();
+langButton.addEventListener('click',()=>setLang(!document.body.classList.contains('en')));
+try{if(localStorage.getItem('manbi-language')==='en')setLang(true)}catch(e){}
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.addEventListener('click',()=>{const opened=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(opened));menu.textContent=opened?'✕':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
